@@ -4,15 +4,59 @@
 <head>
 <title>gitbazi</title>
 <meta charset = "utf-8">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-<ul>
-	<li> <img src = "img/amerfort.jpg" alt="amerfort" width="50%"></li>
-	<li> <img src = "img/beautiful-rain.jpg" alt="beautiful-rain" width="50%"></li>
-	<li> <img src = "img/jpr.jpg" alt="jpr view point" width="50%"></li>
-	<li> <img src = "img/tree.jpg" alt="tree" width="50%"></li>
-</ul>
+
+  <div class="swiper w-full h-screen">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img class=" w-full" src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="First slide"></div>
+    <div class="swiper-slide"><img class=" w-full" src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="second slide"></div>
+    <div class="swiper-slide"><img class="w-full"  src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=80" alt="third slide"></div>
+  
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+ 
+</div>
+
+
+
+
+<script>
+ const swiper = new Swiper('.swiper', {
+  // Optional parameters
+ 
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+ </script>
 </body>
 </html>
 
